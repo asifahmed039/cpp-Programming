@@ -1,14 +1,23 @@
 #include<iostream>
 using namespace std;
+
+void fun( int ** p){
+     cout<<(**p);
+    
+}
+
 int main(){
-     int f,s;
-     int * p1,*p2;
-     p1=&f;
-     p2=&s;
-     cout<<"Enter the value of first =";
-     cin>>f;
-     *p2=*p1;
-     cout<<f<<" "<<s;
-     return 0;
-     
+    int a=10;
+    void *ptr=0;   //All in one pointer its contain the address of all pointer
+     //but during dereferance type casting is needed.
+    ptr=&a;
+    char ch='a';
+    ptr=&ch;
+    
+    cout<<*(char *)ptr<<endl;
+
+    cout<<ptr;
+
+    return 0;
+
 }
