@@ -1,15 +1,17 @@
 #include<iostream>
 using namespace std;
+void display_fun(char &f1){
+    cout<<"Enter the second latter of your name.";
+    cin>>f1;
+}
 int main(){
-    char ch;
-    ch='b';
-    char &b=ch;
+    
     //Reference variables must be initilize during theirs declarations.
     //b=ch is wrong.
-    cout<<ch<<" "<<b;
-    int a=65;
-    ch=a;
-    cout<<" ";
-    cout<<ch<<" "<<b;
+    char c;
+    cout<<"enter the first character of your name."<<endl;
+    cin>>c;
+    display_fun(c);
+    cout<<c;
     return 0;
 }
