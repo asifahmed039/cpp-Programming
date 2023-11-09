@@ -17,5 +17,12 @@ int main(){
             cout<<arr[i][j]<<" ";
         }
     }
+
+    //delete the space 
+    for(int i=0;i<m;i++){
+        delete []arr[i];
+
+    }
+    delete []arr;
     return 0;
 }
