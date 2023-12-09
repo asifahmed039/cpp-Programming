@@ -1,8 +1,8 @@
 #include<iostream>
-#include"stack.cpp"
+#include"stack&template.cpp"
 using namespace std;
 int main(){
-    stackUsingArray s1;
+    stackUsingArray<int> s1;
     s1.push(200);
     s1.push(400);
     s1.push(100);

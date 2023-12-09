@@ -15,7 +15,7 @@ public:
     }
 
     T getx(){
-        return x;
+        return x; 
     }
 
     void sety(V y){
